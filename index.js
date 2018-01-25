@@ -3,7 +3,7 @@ var Obniz = require("./node_modules/obniz/index-for-node6.10.js");
 
 
 exports.handler = function(event, context, callback) {
-  var obniz = new Obniz("7657-9440");
+  var obniz = new Obniz("YOUR OBNIZ ID HERE");
   obniz.onconnect = function () {
 
     var servo = obniz.wired("ServoMotor", 0, 1, 2);
